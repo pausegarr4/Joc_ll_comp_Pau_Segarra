@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://personatge.gd" type="Script" id=2]
+[ext_resource path="res://purepng.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 26.0719, 19.7926 )
+
+[node name="Personatge" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Duende clash royale" type="Sprite" parent="."]
+position = Vector2( 21, -1.90735e-06 )
+scale = Vector2( 0.0585937, 0.0585937 )
+texture = ExtResource( 3 )
+
+[node name="Rectangle" type="CollisionShape2D" parent="."]
+position = Vector2( 4, 1 )
+shape = SubResource( 1 )

@@ -1,0 +1,124 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Personatge.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Fonts/Glossy Sheen Shine DEMO.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Paret2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Lava_24_X_24.png" type="Texture" id=6]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 51.2283, 58.0623 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 51
+font_data = ExtResource( 2 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 880.729, 34.9375 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 34.5, 61 )
+
+[node name="Joc" type="Node2D"]
+
+[node name="Personatge" parent="." instance=ExtResource( 1 )]
+position = Vector2( 18, 352 )
+scale = Vector2( 0.380649, 0.378904 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Duende clash royale" parent="Personatge" index="0"]
+position = Vector2( 75.013, 10.5569 )
+scale = Vector2( 0.111341, 0.111341 )
+
+[node name="Rectangle" parent="Personatge" index="1"]
+position = Vector2( 45.9741, 10.5568 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 5 )
+
+[node name="Camara" type="Camera2D" parent="Personatge"]
+offset = Vector2( 70, 0 )
+current = true
+zoom = Vector2( 0.6, 0.6 )
+
+[node name="Text principal" type="Label" parent="Personatge"]
+margin_left = 520.164
+margin_top = -472.415
+margin_right = 989.164
+margin_bottom = -399.415
+custom_fonts/font = SubResource( 3 )
+text = "No caiguis a la lava
+Nombre d'intents:"
+
+[node name="Label" type="Label" parent="Personatge"]
+margin_left = 375.674
+margin_top = -213.774
+margin_right = 415.674
+margin_bottom = -199.774
+text = "0"
+
+[node name="Paret2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 147, 449 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" parent="Paret2" index="0"]
+position = Vector2( 6, 12 )
+
+[node name="ColorRect" parent="Paret2" index="1"]
+margin_left = -10.0
+margin_top = -1.0
+margin_right = 19.0
+margin_bottom = 26.0
+
+[node name="Paret3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 193, 385 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" parent="Paret3" index="0"]
+position = Vector2( 4.5, -12.75 )
+
+[node name="ColorRect" parent="Paret3" index="1"]
+margin_left = -10.0
+margin_top = -26.0
+margin_right = 19.0
+margin_bottom = 0.0
+
+[node name="LAVA" type="Area2D" parent="."]
+position = Vector2( -275, 180 )
+scale = Vector2( 0.96, 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 779.688, 388.063 )
+shape = SubResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="LAVA"]
+position = Vector2( 691.667, 483 )
+scale = Vector2( 4.03568, 1.34259 )
+texture = ExtResource( 6 )
+
+[node name="Paret1" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Paret1"]
+position = Vector2( 32.5, 462 )
+shape = SubResource( 4 )
+
+[node name="ColorRect" type="ColorRect" parent="Paret1"]
+margin_left = -3.0
+margin_top = 402.0
+margin_right = 64.0
+margin_bottom = 520.0
+
+[connection signal="body_entered" from="LAVA" to="Personatge" method="_on_LAVA_body_entered"]
+[connection signal="body_entered" from="LAVA" to="LAVA" method="_on_Detector_body_entered"]
+[connection signal="body_exited" from="LAVA" to="LAVA" method="_on_Detector_body_exited"]
+
+[editable path="Personatge"]
+[editable path="Paret2"]
+[editable path="Paret3"]
