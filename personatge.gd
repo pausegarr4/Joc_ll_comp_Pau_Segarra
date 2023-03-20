@@ -32,3 +32,8 @@ func _process(delta):
 func _on_LAVA_body_entered(body):
 	
 	position = Vector2(25, 255)
+
+
+func _on_Bandera_body_entered(body):
+	position = Vector2(4400, -200)
+	pass # Replace with function body.

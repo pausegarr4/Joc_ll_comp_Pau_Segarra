@@ -1,91 +1,270 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://Personatge.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Fonts/Glossy Sheen Shine DEMO.ttf" type="DynamicFontData" id=2]
-[ext_resource path="res://Paret2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://R.jpg" type="Texture" id=3]
+[ext_resource path="res://Mapa final/Inici_mapa_editat.jpg" type="Texture" id=4]
+[ext_resource path="res://Fondo.jpg" type="Texture" id=5]
 [ext_resource path="res://Lava_24_X_24.png" type="Texture" id=6]
+[ext_resource path="res://Mapa final/provafinal.png" type="Texture" id=7]
+[ext_resource path="res://purepng-removebg-preview.png" type="Texture" id=8]
+[ext_resource path="res://foto negra.png" type="Texture" id=9]
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 51.2283, 58.0623 )
-
-[sub_resource type="DynamicFont" id=3]
-size = 51
+[sub_resource type="DynamicFont" id=58]
+size = 350
 font_data = ExtResource( 2 )
 
+[sub_resource type="DynamicFont" id=3]
+size = 45
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=59]
+size = 100
+font_data = ExtResource( 2 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 31.5251, 36.9486 )
+
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 880.729, 34.9375 )
+extents = Vector2( 1961.46, 26 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 9.89587, 9 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 9.37499, 9 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 24.7397, 8.5 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 11.9794, 11.25 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 10.9353, 10.5 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 10.9376, 11.5625 )
+
+[sub_resource type="RectangleShape2D" id=18]
+extents = Vector2( 29.1669, 10.5 )
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 9.37502, 9 )
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 9.37507, 8.8125 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 8.8542, 8.1875 )
+
+[sub_resource type="RectangleShape2D" id=22]
+extents = Vector2( 11.9792, 15.75 )
+
+[sub_resource type="RectangleShape2D" id=61]
+extents = Vector2( 8.33331, 11.5 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 34.5, 61 )
+extents = Vector2( 38.5, 165.5 )
+
+[sub_resource type="RectangleShape2D" id=23]
+extents = Vector2( 9, 9 )
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 48.6875, 10 )
+
+[sub_resource type="RectangleShape2D" id=25]
+
+[sub_resource type="RectangleShape2D" id=26]
+extents = Vector2( 17, 18.5 )
+
+[sub_resource type="RectangleShape2D" id=27]
+extents = Vector2( 16, 28.5 )
+
+[sub_resource type="RectangleShape2D" id=28]
+extents = Vector2( 15.5, 36.75 )
+
+[sub_resource type="RectangleShape2D" id=29]
+extents = Vector2( 16, 38 )
+
+[sub_resource type="RectangleShape2D" id=30]
+extents = Vector2( 11.5, 10.5 )
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 58.5, 11 )
+
+[sub_resource type="RectangleShape2D" id=32]
+extents = Vector2( 46.5, 11.5 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 58.5, 12 )
+
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 10.75, 10.75 )
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 11, 11 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 20, 46.5 )
+
+[sub_resource type="RectangleShape2D" id=37]
+extents = Vector2( 35, 11 )
+
+[sub_resource type="RectangleShape2D" id=38]
+extents = Vector2( 95.5, 12.5 )
+
+[sub_resource type="RectangleShape2D" id=39]
+extents = Vector2( 11.5, 10.5 )
+
+[sub_resource type="RectangleShape2D" id=40]
+extents = Vector2( 23.5, 12.25 )
+
+[sub_resource type="RectangleShape2D" id=41]
+extents = Vector2( 17.5, 19 )
+
+[sub_resource type="RectangleShape2D" id=42]
+extents = Vector2( 40.5, 10.5 )
+
+[sub_resource type="RectangleShape2D" id=43]
+extents = Vector2( 18, 19 )
+
+[sub_resource type="RectangleShape2D" id=44]
+extents = Vector2( 20, 79 )
+
+[sub_resource type="RectangleShape2D" id=45]
+extents = Vector2( 10.5, 69.5 )
+
+[sub_resource type="RectangleShape2D" id=46]
+extents = Vector2( 10, 61.5 )
+
+[sub_resource type="RectangleShape2D" id=47]
+extents = Vector2( 10, 50.5 )
+
+[sub_resource type="RectangleShape2D" id=48]
+extents = Vector2( 10, 40.5 )
+
+[sub_resource type="RectangleShape2D" id=49]
+extents = Vector2( 12, 29.5 )
+
+[sub_resource type="RectangleShape2D" id=50]
+extents = Vector2( 13, 19 )
+
+[sub_resource type="RectangleShape2D" id=51]
+extents = Vector2( 11.5, 11 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 130.5, 17.5 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 24.5, 15.5 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 652.25, 14 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 176.5, 28 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 305, 46 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 203.25, 51 )
+
+[sub_resource type="RectangleShape2D" id=53]
+extents = Vector2( 12, 150.5 )
+
+[sub_resource type="RectangleShape2D" id=54]
+extents = Vector2( 21, 364.5 )
+
+[sub_resource type="RectangleShape2D" id=55]
+extents = Vector2( 250.5, 21 )
+
+[sub_resource type="RectangleShape2D" id=56]
+extents = Vector2( 21.5, 367.5 )
+
+[sub_resource type="RectangleShape2D" id=57]
+extents = Vector2( 242.5, 30.5 )
+
+[sub_resource type="DynamicFont" id=60]
+size = 100
+font_data = ExtResource( 2 )
 
 [node name="Joc" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="Fondo" type="Sprite" parent="."]
+position = Vector2( 1648.5, 598.5 )
+scale = Vector2( 13.1377, 8.36525 )
+texture = ExtResource( 5 )
+
+[node name="FotoNegra" type="Sprite" parent="."]
+position = Vector2( 4501.5, 135 )
+scale = Vector2( 22.7172, 20.3673 )
+texture = ExtResource( 9 )
+
+[node name="Fons" type="Sprite" parent="."]
+position = Vector2( 341, 384 )
+scale = Vector2( 0.300681, 0.300681 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Fons"]
+margin_left = -1639.61
+margin_top = 53.2125
+margin_right = -949.616
+margin_bottom = 293.212
+custom_fonts/font = SubResource( 58 )
+text = "INICI"
+
+[node name="Text_principal" type="Label" parent="Fons"]
+margin_left = -1250.49
+margin_top = -106.425
+margin_right = -340.495
+margin_bottom = -33.425
+custom_fonts/font = SubResource( 3 )
+text = "No caiguis a la lava ni toquis cap ésser viu
+per a guanyar arriba a la bandera final"
+
+[node name="Provafinal" type="Sprite" parent="."]
+position = Vector2( 2653, 394 )
+scale = Vector2( 0.704667, 0.684 )
+texture = ExtResource( 7 )
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 4100.0
+margin_top = 142.0
+margin_right = 4884.0
+margin_bottom = 241.0
+custom_fonts/font = SubResource( 59 )
+text = "Has guanyat!"
+
+[node name="R" type="Sprite" parent="."]
+position = Vector2( 1522, 388 )
+scale = Vector2( 0.283007, 0.283007 )
+texture = ExtResource( 3 )
 
 [node name="Personatge" parent="." instance=ExtResource( 1 )]
-position = Vector2( 18, 352 )
+position = Vector2( 76, 430 )
 scale = Vector2( 0.380649, 0.378904 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Duende clash royale" parent="Personatge" index="0"]
-position = Vector2( 75.013, 10.5569 )
-scale = Vector2( 0.111341, 0.111341 )
+position = Vector2( 36.7793, -10.5571 )
+scale = Vector2( 0.227171, 0.227171 )
+texture = ExtResource( 8 )
 
 [node name="Rectangle" parent="Personatge" index="1"]
-position = Vector2( 45.9741, 10.5568 )
-scale = Vector2( 1, 1 )
+position = Vector2( 15.7626, -10.5568 )
 shape = SubResource( 5 )
 
 [node name="Camara" type="Camera2D" parent="Personatge"]
 offset = Vector2( 70, 0 )
 current = true
 zoom = Vector2( 0.6, 0.6 )
-
-[node name="Text principal" type="Label" parent="Personatge"]
-margin_left = 520.164
-margin_top = -472.415
-margin_right = 989.164
-margin_bottom = -399.415
-custom_fonts/font = SubResource( 3 )
-text = "No caiguis a la lava
-Nombre d'intents:"
-
-[node name="Label" type="Label" parent="Personatge"]
-margin_left = 375.674
-margin_top = -213.774
-margin_right = 415.674
-margin_bottom = -199.774
-text = "0"
-
-[node name="Paret2" parent="." instance=ExtResource( 5 )]
-position = Vector2( 147, 449 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CollisionShape2D" parent="Paret2" index="0"]
-position = Vector2( 6, 12 )
-
-[node name="ColorRect" parent="Paret2" index="1"]
-margin_left = -10.0
-margin_top = -1.0
-margin_right = 19.0
-margin_bottom = 26.0
-
-[node name="Paret3" parent="." instance=ExtResource( 5 )]
-position = Vector2( 193, 385 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="CollisionShape2D" parent="Paret3" index="0"]
-position = Vector2( 4.5, -12.75 )
-
-[node name="ColorRect" parent="Paret3" index="1"]
-margin_left = -10.0
-margin_top = -26.0
-margin_right = 19.0
-margin_bottom = 0.0
 
 [node name="LAVA" type="Area2D" parent="."]
 position = Vector2( -275, 180 )
@@ -95,30 +274,250 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="LAVA"]
-position = Vector2( 779.688, 388.063 )
+position = Vector2( 1860.41, 388 )
 shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="LAVA"]
-position = Vector2( 691.667, 483 )
-scale = Vector2( 4.03568, 1.34259 )
+position = Vector2( 1547.91, 483 )
+scale = Vector2( 6.59931, 1.34259 )
 texture = ExtResource( 6 )
 
-[node name="Paret1" type="StaticBody2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 463.021, 329 )
+shape = SubResource( 12 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Paret1"]
-position = Vector2( 32.5, 462 )
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 857.292, 329 )
+shape = SubResource( 13 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 1119.01, 328.5 )
+shape = SubResource( 14 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 1614.06, 328.25 )
+shape = SubResource( 15 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 1742.19, 230.5 )
+shape = SubResource( 16 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2145.31, 135.563 )
+shape = SubResource( 17 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2264.58, 328.5 )
+shape = SubResource( 18 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2644.79, 297 )
+shape = SubResource( 19 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2757.29, 296.813 )
+shape = SubResource( 20 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2830.21, 297 )
+shape = SubResource( 21 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2440.1, 322.75 )
+shape = SubResource( 22 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="LAVA"]
+position = Vector2( 2583.33, 255.5 )
+shape = SubResource( 61 )
+
+[node name="Parets" type="StaticBody2D" parent="."]
+position = Vector2( -77, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 36.5, 357.5 )
 shape = SubResource( 4 )
 
-[node name="ColorRect" type="ColorRect" parent="Paret1"]
-margin_left = -3.0
-margin_top = 402.0
-margin_right = 64.0
-margin_bottom = 520.0
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 158, 418 )
+shape = SubResource( 23 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 273.313, 418 )
+shape = SubResource( 24 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 274, 342 )
+shape = SubResource( 25 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 399, 466.5 )
+shape = SubResource( 26 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 592, 457.5 )
+shape = SubResource( 27 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 745.5, 446.75 )
+shape = SubResource( 28 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 957, 448 )
+shape = SubResource( 29 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1121.5, 400.5 )
+shape = SubResource( 30 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1243.5, 306 )
+shape = SubResource( 31 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1278.5, 400.5 )
+shape = SubResource( 32 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1427.5, 401 )
+shape = SubResource( 33 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1427.25, 305.25 )
+shape = SubResource( 34 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1623, 306 )
+shape = SubResource( 35 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1541, 439.5 )
+shape = SubResource( 36 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1741, 401 )
+shape = SubResource( 37 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 1908.5, 305.5 )
+shape = SubResource( 38 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2155.5, 400.5 )
+shape = SubResource( 39 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2092.5, 400.75 )
+shape = SubResource( 40 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2282.5, 435 )
+shape = SubResource( 41 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2404.5, 385.5 )
+shape = SubResource( 42 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2608, 435 )
+shape = SubResource( 43 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2791, 376 )
+shape = SubResource( 44 )
+one_way_collision_margin = 0.0
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2760.5, 386.5 )
+shape = SubResource( 45 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2740, 397.5 )
+shape = SubResource( 46 )
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2719, 406.5 )
+shape = SubResource( 47 )
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2699, 416.5 )
+shape = SubResource( 48 )
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2680, 424.5 )
+shape = SubResource( 49 )
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2661, 434 )
+shape = SubResource( 50 )
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Parets"]
+position = Vector2( 2639.5, 446 )
+shape = SubResource( 51 )
+
+[node name="Terra" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terra"]
+position = Vector2( 127.5, 535.5 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Terra"]
+position = Vector2( 322.5, 533.5 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Terra"]
+position = Vector2( 1048.75, 532 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Terra"]
+position = Vector2( 1955.5, 548 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Terra"]
+position = Vector2( 2433, 531 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Terra"]
+position = Vector2( 2977.75, 537 )
+shape = SubResource( 11 )
+
+[node name="Bandera" type="Area2D" parent="."]
+position = Vector2( 2905, 466 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bandera"]
+position = Vector2( 12, -131.5 )
+shape = SubResource( 53 )
+
+[node name="Parets_fondo_negre" type="StaticBody2D" parent="."]
+position = Vector2( 4138, -34 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Parets_fondo_negre"]
+position = Vector2( 9, -5.5 )
+shape = SubResource( 54 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Parets_fondo_negre"]
+position = Vector2( 233.5, 362 )
+shape = SubResource( 55 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Parets_fondo_negre"]
+position = Vector2( 461.5, 15.5 )
+shape = SubResource( 56 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Parets_fondo_negre"]
+position = Vector2( 219.5, -353.5 )
+shape = SubResource( 57 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 4167.0
+margin_top = 305.0
+margin_right = 4795.0
+margin_bottom = 407.0
+custom_fonts/font = SubResource( 60 )
+text = "Felicitats!"
 
 [connection signal="body_entered" from="LAVA" to="Personatge" method="_on_LAVA_body_entered"]
 [connection signal="body_entered" from="LAVA" to="LAVA" method="_on_Detector_body_entered"]
 [connection signal="body_exited" from="LAVA" to="LAVA" method="_on_Detector_body_exited"]
+[connection signal="body_entered" from="Bandera" to="Personatge" method="_on_Bandera_body_entered"]
+[connection signal="body_entered" from="Bandera" to="Personatge" method="_on_Area2D_body_entered"]
 
 [editable path="Personatge"]
-[editable path="Paret2"]
-[editable path="Paret3"]
